@@ -7,5 +7,5 @@ const API = axios.create({
         Authorization: `Bearer ${process.env.NEXT_PUBLIC_STRAPI_API_TOKEN}`,
     },
 })
-
+//export
 export default API
