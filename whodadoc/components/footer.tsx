@@ -157,40 +157,40 @@ export default function FooterLinks() {
                 },
             ],
         },
-        {
-            title: "Lorum",
-            links: [
-                {
-                    label: "Ipsum",
-                    link: "#",
-                },
-                {
-                    label: "Ipsum",
-                    link: "#",
-                },
-                {
-                    label: "Ipsum",
-                    link: "#",
-                },
-            ],
-        },
-        {
-            title: "Lorum",
-            links: [
-                {
-                    label: "Ipsum",
-                    link: "#",
-                },
-                {
-                    label: "Ipsum",
-                    link: "#",
-                },
-                {
-                    label: "Ipsum",
-                    link: "#",
-                },
-            ],
-        },
+        // {
+        //     title: "Lorum",
+        //     links: [
+        //         {
+        //             label: "Ipsum",
+        //             link: "#",
+        //         },
+        //         {
+        //             label: "Ipsum",
+        //             link: "#",
+        //         },
+        //         {
+        //             label: "Ipsum",
+        //             link: "#",
+        //         },
+        //     ],
+        // },
+        // {
+        //     title: "Lorum",
+        //     links: [
+        //         {
+        //             label: "Ipsum",
+        //             link: "#",
+        //         },
+        //         {
+        //             label: "Ipsum",
+        //             link: "#",
+        //         },
+        //         {
+        //             label: "Ipsum",
+        //             link: "#",
+        //         },
+        //     ],
+        // },
     ]
 
     const groups = data.map((group) => {
@@ -218,14 +218,14 @@ export default function FooterLinks() {
         <footer className={classes.footer}>
             <Container className={classes.inner} size="xl">
                 <div className={classes.logo}>
-                    <img src="/images/logo.png" alt="whodadoc" />
+                    <img src="/images/logo.png" alt="doConnect" />
 
                     <Text
                         size="xs"
                         color="dimmed"
                         className={classes.description}
                     >
-                        Find live static availablility schedule of doctors and
+                        Find live availablility schedule of doctors and
                         details of clinics, chemists nearby.
                     </Text>
                 </div>
@@ -233,7 +233,7 @@ export default function FooterLinks() {
             </Container>
             <Container className={classes.afterFooter} size="xl">
                 <Text color="dimmed" size="sm">
-                    © 2023 FindADocta. All rights reserved.
+                    © 2023 DocConnect. All rights reserved.
                 </Text>
 
                 <Group

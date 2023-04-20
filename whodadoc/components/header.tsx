@@ -105,22 +105,22 @@ const mockdata = [
     {
         icon: IconCode,
         title: "Nearby doctors",
-        description: "This Pokémon’s cry is very loud and distracting",
+        description: "Find doctors around you",
     },
     {
         icon: IconCoin,
         title: "Local Clinics",
-        description: "The fluid of Smeargle’s tail secretions changes",
+        description: "Clinics nearby",
     },
     {
         icon: IconBook,
         title: "Chemists around",
-        description: "Yanma is capable of seeing 360 degrees without",
+        description: "Local Medical Stores",
     },
     {
         icon: IconBook,
         title: "Health Chatbot",
-        description: "Yanma is capable of seeing 360 degrees without",
+        description: "A chatbot to assist you",
     },
     
 ]
@@ -206,7 +206,7 @@ export default function HeaderMegaMenu() {
                                     {links}
                                 </SimpleGrid>
 
-                                <div className={classes.dropdownFooter}>
+                                {/* <div className={classes.dropdownFooter}>
                                     <Group position="apart">
                                         <div>
                                             <Text fw={500} fz="sm">
@@ -221,7 +221,7 @@ export default function HeaderMegaMenu() {
                                             Get started
                                         </Button>
                                     </Group>
-                                </div>
+                                </div> */}
                             </HoverCard.Dropdown>
                         </HoverCard>
                         <a href="#" className={classes.link}>
@@ -289,10 +289,10 @@ export default function HeaderMegaMenu() {
                         }
                     />
 
-                    <Group position="center" grow pb="xl" px="md">
+                    {/* <Group position="center" grow pb="xl" px="md">
                         <Button variant="default">Log in</Button>
                         <Button>Sign up</Button>
-                    </Group>
+                    </Group> */}
                 </ScrollArea>
             </Drawer>
         </Box>
