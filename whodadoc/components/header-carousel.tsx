@@ -347,7 +347,7 @@ function Card(props: CardProps) {
                 <img
                     src={
                         image &&
-                        "https://api.trackingpox.com/" + image.data.attributes.url
+                        "https://api.trackingpox.com" + image.data.attributes.url
                     }
                 />
             </Box>
