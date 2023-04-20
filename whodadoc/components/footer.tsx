@@ -233,7 +233,7 @@ export default function FooterLinks() {
             </Container>
             <Container className={classes.afterFooter} size="xl">
                 <Text color="dimmed" size="sm">
-                    © 2023 DocConnect. All rights reserved.
+                    © 2023 DoConnect. All rights reserved.
                 </Text>
 
                 <Group
