@@ -133,6 +133,7 @@ export default function FooterLinks() {
                 {
                     label: "About",
                     link: "#",
+                    
                 },
                 {
                     label: "Contact",
@@ -140,7 +141,7 @@ export default function FooterLinks() {
                 },
                 {
                     label: "Blogs",
-                    link: "#",
+                    link: "#article-section",
                 },
             ],
         },
@@ -200,7 +201,7 @@ export default function FooterLinks() {
                 className={classes.link}
                 component="a"
                 href={link.link}
-                onClick={(event) => event.preventDefault()}
+                // onClick={(event) => event.preventDefault()}
             >
                 {link.label}
             </Text>

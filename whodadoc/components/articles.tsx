@@ -155,9 +155,10 @@ interface CardProps {
     title: string
     description: string
     featured: boolean
+    url:string
 }
 
-function Card({ image, title, description, featured }: CardProps) {
+function Card({ image, title, description, featured, url }: CardProps) {
     const { classes } = useStyles()
 
     if (featured) return null
@@ -175,14 +176,19 @@ function Card({ image, title, description, featured }: CardProps) {
                 <Text className={classes.cardDescription}>{description}</Text>
 
                 <div className={classes.cardAction}>
-                    <Button
+                    <a href={url} target="_blank">
+
+                    <Button 
                         variant="subtle"
                         radius="lg"
                         size="xl"
                         className={classes.cardButton}
                     >
-                        See More
+                        See More2
                     </Button>
+
+                    </a>
+                    
                 </div>
             </div>
         </Paper>
@@ -197,6 +203,7 @@ const data = [
         description:
             "Nuts are extremely healthy, as they're packed full of nutrients and antioxidants.",
         featured: true,
+        url:"https://www.webmd.com/diet/features/go-nuts-your-diet#:~:text=Dieters%20who%20eat%20nuts%20tend,nuts%20helps%20dieters%20lose%20weight.",
     },
     {
         id: 2,
@@ -204,6 +211,7 @@ const data = [
         title: "Social media and it's effects",
         description: "Social media addiction is becoming more...",
         featured: false,
+        url:"https://www.mayoclinic.org/healthy-lifestyle/tween-and-teen-health/in-depth/teens-and-social-media-use/art-20474437#:~:text=Social%20media%20harms,much%20social%20media%20teens%20use.",
     },
     {
         id: 3,
@@ -211,6 +219,7 @@ const data = [
         title: "Steps to Take If Your Oral Diabetes Medication Stops Working",
         description: "If your oral diabetes drug...",
         featured: false,
+        url:"https://www.healthline.com/health/type-2-diabetes/oral-medication-stops-working#:~:text=When%20your%20oral%20diabetes%20medication,level%2C%20or%20a%20recent%20illness.",
     },
 ]
 
@@ -222,7 +231,7 @@ export default function Articles() {
     })
 
     return (
-        <div className={classes.root}>
+        <div id="article-section" className={classes.root}>
             <div className={classes.heading}>
                 <Title className={classes.title}>Our Latest Articles</Title>
                 <span className={classes.subTitle}>Written by our experts</span>
@@ -244,7 +253,7 @@ export default function Articles() {
                             {data[0].description}
                         </Text>
                     </div>
-
+                    <a href={data[0].url} target="_blank">
                     <Button
                         variant="subtle"
                         radius="lg"
@@ -253,14 +262,17 @@ export default function Articles() {
                     >
                         See More
                     </Button>
+                    </a>
+                    
                 </Paper>
                 <div className={classes.cards}>{Cards}</div>
             </div>
 
             <div className={classes.action}>
                 <Button radius="lg" size="xl" className={classes.seeMore}>
-                    See More
+                    More articles
                 </Button>
+                {/* I want these buttons to be functional */}
             </div>
         </div>
     )

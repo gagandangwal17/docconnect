@@ -30,6 +30,8 @@ import {
     IconChevronDown,
 } from "@tabler/icons-react"
 
+import Link from 'next/link'
+
 const useStyles = createStyles((theme) => ({
     link: {
         display: "flex",
@@ -106,21 +108,25 @@ const mockdata = [
         icon: IconCode,
         title: "Nearby doctors",
         description: "Find doctors around you",
+        url: "https://google.com"
     },
     {
         icon: IconCoin,
         title: "Local Clinics",
         description: "Clinics nearby",
+        url: "https://google.com"
     },
     {
         icon: IconBook,
         title: "Chemists around",
         description: "Local Medical Stores",
+        url: "https://google.com"
     },
     {
         icon: IconBook,
         title: "Health Chatbot",
         description: "A chatbot to assist you",
+        url: "https://google.com"
     },
     
 ]
@@ -132,7 +138,8 @@ export default function HeaderMegaMenu() {
     const { classes, theme } = useStyles()
 
     const links = mockdata.map((item) => (
-        <UnstyledButton className={classes.subLink} key={item.title}>
+        <Link href={item.url} key={item.title}>
+        <UnstyledButton className={classes.subLink} >
             <Group noWrap align="flex-start">
                 <ThemeIcon size={34} variant="default" radius="md">
                     <item.icon size={rem(22)} color={theme.fn.primaryColor()} />
@@ -147,6 +154,7 @@ export default function HeaderMegaMenu() {
                 </div>
             </Group>
         </UnstyledButton>
+        </Link>
     ))
 
     return (
@@ -224,7 +232,7 @@ export default function HeaderMegaMenu() {
                                 </div> */}
                             </HoverCard.Dropdown>
                         </HoverCard>
-                        <a href="#" className={classes.link}>
+                        <a href="#article-section" className={classes.link}>
                             Articles
                         </a>
                         <a href="#" className={classes.link}>
