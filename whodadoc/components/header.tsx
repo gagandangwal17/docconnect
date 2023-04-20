@@ -104,34 +104,25 @@ const useStyles = createStyles((theme) => ({
 const mockdata = [
     {
         icon: IconCode,
-        title: "Open source",
+        title: "Nearby doctors",
         description: "This Pokémon’s cry is very loud and distracting",
     },
     {
         icon: IconCoin,
-        title: "Free for everyone",
+        title: "Local Clinics",
         description: "The fluid of Smeargle’s tail secretions changes",
     },
     {
         icon: IconBook,
-        title: "Documentation",
+        title: "Chemists around",
         description: "Yanma is capable of seeing 360 degrees without",
     },
     {
-        icon: IconFingerprint,
-        title: "Security",
-        description: "The shell’s rounded shape and the grooves on its.",
+        icon: IconBook,
+        title: "Health Chatbot",
+        description: "Yanma is capable of seeing 360 degrees without",
     },
-    {
-        icon: IconChartPie3,
-        title: "Analytics",
-        description: "This Pokémon uses its flying ability to quickly chase",
-    },
-    {
-        icon: IconNotification,
-        title: "Notifications",
-        description: "Combusken battles with the intensely hot flames it spews",
-    },
+    
 ]
 
 export default function HeaderMegaMenu() {
@@ -234,10 +225,10 @@ export default function HeaderMegaMenu() {
                             </HoverCard.Dropdown>
                         </HoverCard>
                         <a href="#" className={classes.link}>
-                            Learn
+                            Articles
                         </a>
                         <a href="#" className={classes.link}>
-                            Academy
+                            Contact
                         </a>
                     </Group>
 
@@ -266,7 +257,7 @@ export default function HeaderMegaMenu() {
                         }
                     />
 
-                    <a href="#" className={classes.link}>
+                    <a href="header/tsx" className={classes.link}>
                         Home
                     </a>
                     <UnstyledButton
@@ -284,11 +275,11 @@ export default function HeaderMegaMenu() {
                         </Center>
                     </UnstyledButton>
                     <Collapse in={linksOpened}>{links}</Collapse>
-                    <a href="#" className={classes.link}>
-                        Learn
+                    <a href="header-carousel.tsx" className={classes.link}>
+                        Find Doctor
                     </a>
-                    <a href="#" className={classes.link}>
-                        Academy
+                    <a href="footer.tsx" className={classes.link}>
+                        Contact
                     </a>
 
                     <Divider

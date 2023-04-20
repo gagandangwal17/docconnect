@@ -74,6 +74,7 @@ const useStyles = createStyles((theme) => ({
     cardImage: {
         position: "relative",
         marginBottom: rem(40),
+        flexShrink: 0,
 
         "& img": {
             display: "block",
@@ -127,6 +128,7 @@ const useStyles = createStyles((theme) => ({
     largeCardImage: {
         position: "relative",
         marginBottom: rem(40),
+        flexShrink: 0,
 
         "& img": {
             display: "block",
@@ -191,23 +193,23 @@ const data = [
     {
         id: 1,
         image: "/images/article-1.png",
-        title: "Card Title",
+        title: "How Eating Nuts Can Help You Lose Weight",
         description:
-            "Card desription. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit rhoncus imperdiet nisi.",
+            "Nuts are extremely healthy, as they're packed full of nutrients and antioxidants.",
         featured: true,
     },
     {
         id: 2,
         image: "/images/article-2.png",
-        title: "Card Title",
-        description: "Card desription. Lorem ipsum dolor sit amet",
+        title: "Social media and it's effects",
+        description: "Social media addiction is becoming more...",
         featured: false,
     },
     {
         id: 3,
         image: "/images/article-3.png",
-        title: "Card Title",
-        description: "Card desription. Lorem ipsum dolor sit amet",
+        title: "Steps to Take If Your Oral Diabetes Medication Stops Working",
+        description: "If your oral diabetes drug...",
         featured: false,
     },
 ]

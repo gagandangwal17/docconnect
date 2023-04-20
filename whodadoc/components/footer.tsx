@@ -225,15 +225,15 @@ export default function FooterLinks() {
                         color="dimmed"
                         className={classes.description}
                     >
-                        Build fully functional accessible web applications
-                        faster than ever
+                        Find live static availablility schedule of doctors and
+                        details of clinics, chemists nearby.
                     </Text>
                 </div>
                 <div className={classes.groups}>{groups}</div>
             </Container>
             <Container className={classes.afterFooter} size="xl">
                 <Text color="dimmed" size="sm">
-                    © 2020 mantine.dev. All rights reserved.
+                    © 2023 FindADocta. All rights reserved.
                 </Text>
 
                 <Group
