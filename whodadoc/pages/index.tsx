@@ -33,7 +33,7 @@ export default function Home() {
             <main>
                 <Title className={classes.Title}>
                     {
-                        "No need of panicking at the time of emergency. We’ve got all the doctors available around you here!"
+                        "No need of panicking at the time of emergency. We've got all the doctors available around you here!"
                     }
                 </Title>
 

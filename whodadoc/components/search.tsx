@@ -50,7 +50,7 @@ export default function Search() {
                         placeholder="Specialty"
                         radius="md"
                         size="md"
-                        disabled
+                        //disabled
                     />
                     <Input
                         placeholder="Problem (optional)"
@@ -61,9 +61,14 @@ export default function Search() {
 
                     <Switch label="Availability" size="md" />
 
+                    <a href="whodadoc/pages/cardiologist.tsx">
+
                     <Button radius="lg" size="lg">
                         Search
                     </Button>
+
+                    </a>
+                    
                 </div>
             </Paper>
         </div>
