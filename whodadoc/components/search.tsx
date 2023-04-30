@@ -56,7 +56,7 @@ export default function Search() {
                         placeholder="Problem (optional)"
                         radius="md"
                         size="md"
-                        disabled
+                        //disabled
                     />
 
                     <Switch label="Availability" size="md" />
