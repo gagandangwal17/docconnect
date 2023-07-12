@@ -14,6 +14,7 @@ import {
     clsx,
     Rating,
 } from "@mantine/core"
+import Link from "next/link"
 
 const useStyles = createStyles((theme) => ({
     root: {
@@ -176,7 +177,7 @@ function Card({ image, title, description, featured, url }: CardProps) {
                 <Text className={classes.cardDescription}>{description}</Text>
 
                 <div className={classes.cardAction}>
-                    <a href={url} target="_blank">
+                    <Link href={url} target="_blank">
 
                     <Button 
                         variant="subtle"
@@ -184,10 +185,10 @@ function Card({ image, title, description, featured, url }: CardProps) {
                         size="xl"
                         className={classes.cardButton}
                     >
-                        See More
+                        See Moree
                     </Button>
 
-                    </a>
+                    </Link>
                     
                 </div>
             </div>
@@ -269,9 +270,13 @@ export default function Articles() {
             </div>
 
             <div className={classes.action}>
+                <Link href="/test">
                 <Button radius="lg" size="xl" className={classes.seeMore}>
                     More articles
                 </Button>
+                </Link>
+                
+                
                 {/* I want these buttons to be functional */}
             </div>
         </div>

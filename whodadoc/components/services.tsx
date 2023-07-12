@@ -12,6 +12,8 @@ import {
     Title,
 } from "@mantine/core"
 
+import Link from "next/link"
+
 const useStyles = createStyles((theme) => ({
     root: {
         marginTop: rem(120),
@@ -97,28 +99,40 @@ const useStyles = createStyles((theme) => ({
         textAlign: "center",
         marginBottom: rem(20),
     },
+
+    linkClass: {
+        textDecoration: 'none',
+    },
+      
 }))
 
 export default function Services() {
     const { classes } = useStyles()
 
     return (
+        
         <div className={classes.root}>
             <div className={classes.heading}>
-                <Title className={classes.title}>Our Services</Title>
-                <span className={classes.subTitle}>
-                    Serving the best we can
-                </span>
+                    <Title className={classes.title}>Our Services</Title>
+                    <span className={classes.subTitle}>
+                        Serving the best we can
+                    </span>
             </div>
 
             <div className={classes.flex}>
-                <Paper shadow="md" p="xl" radius="xl" className={classes.card}>
+
+            <Link className={classes.linkClass}  href="/test">
+                    
+                    <Paper shadow="md" p="xl" radius="xl" className={classes.card}>
                     <span className="availability icon"></span>
 
                     <span className={classes.icontext}>
                         Live Availability Details
                     </span>
                 </Paper>
+                    
+                </Link>
+                
 
                 <Paper shadow="md" p="xl" radius="xl" className={classes.card}>
                     <span className="consultation icon"></span>
