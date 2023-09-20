@@ -147,16 +147,7 @@ function Card({ image, name, type, reviews, rating, available }: CardProps) {
     return (
         <Paper shadow="xl" p="xl" radius="md" className={classes.card}>
             <Box className={classes.cardImage}>
-                <div className={classes.cardStatus}>
-                    <span
-                        className={clsx(
-                            classes.hole,
-                            available && classes.holeActive
-                        )}
-                    />
-                    Available
-                </div>
-                <img src={image} />
+                <img src={image} className={classes.cardImage}/>
             </Box>
 
             <Title order={3} className={classes.cardTitle}>
@@ -168,7 +159,7 @@ function Card({ image, name, type, reviews, rating, available }: CardProps) {
             </Text>
 
             <div className={classes.reviews}>
-                <Rating defaultValue={rating} color="brand" /> {reviews}
+                <Rating defaultValue={rating} color="brand" readOnly /> {reviews}
             </div>
 
             <Button variant="outline" color="red" radius="lg" size="lg">
@@ -180,35 +171,35 @@ function Card({ image, name, type, reviews, rating, available }: CardProps) {
 
 const data = [
     {
-        image: "/images/",
+        image: "/images/apolloclinic.jpg",
         name: "Appolo Clinic Dehradun",
         type: "Krishan Nagar chowk, Ballapur road, Dehradun",
-        reviews: 192,
+        reviews: 102,
         rating: 4,
         available: true,
     },
     {
-        image: "/images/",
+        image: "/images/dwarkaclinics.webp",
         name: "Dwarka Clinics - The Integrated Superspecialities",
         type: "Race Course, Dalanwala, Dehradun",
-        reviews: 192,
-        rating: 4,
+        reviews: 12,
+        rating: 3,
         available: true,
     },
     {
-        image: "/images/",
+        image: "/images/shuddhiclinic.jpeg",
         name: "Shuddhi Ayurvedic Clinic",
         type: "First Floor, Saket Lane No.1, Rajpur Road, Dehradun",
         reviews: 192,
-        rating: 4,
+        rating: 2,
         available: true,
     },
     {
-        image: "/images/",
+        image: "/images/pinkclinic.jpg",
         name: "Pink Clinic",
         type: "Post office Rd, Clement Town, Dehradun",
-        reviews: 192,
-        rating: 4,
+        reviews: 156,
+        rating: 5,
         available: true,
     },
 ]

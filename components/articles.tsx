@@ -185,7 +185,7 @@ function Card({ image, title, description, featured, url }: CardProps) {
                         size="xl"
                         className={classes.cardButton}
                     >
-                        See Moree
+                        See More
                     </Button>
 
                     </Link>

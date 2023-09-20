@@ -128,42 +128,7 @@ const data = [
         type: "Child Specialist",
         hospital: "CMI Hospital",
     },
-    {
-        image: "/images/doc.png",
-        name: "Dr. Sanjeev Kapoor",
-        type: "Child Specialist",
-        hospital: "CMI Hospital",
-    },
-    {
-        image: "/images/doc.png",
-        name: "Dr. Sanjeev Kapoor",
-        type: "Child Specialist",
-        hospital: "CMI Hospital",
-    },
-    {
-        image: "/images/doc.png",
-        name: "Dr. Sanjeev Kapoor",
-        type: "Child Specialist",
-        hospital: "CMI Hospital",
-    },
-    {
-        image: "/images/doc.png",
-        name: "Dr. Sanjeev Kapoor",
-        type: "Child Specialist",
-        hospital: "CMI Hospital",
-    },
-    {
-        image: "/images/doc.png",
-        name: "Dr. Sanjeev Kapoor",
-        type: "Child Specialist",
-        hospital: "CMI Hospital",
-    },
-    {
-        image: "/images/doc.png",
-        name: "Dr. Sanjeev Kapoor",
-        type: "Child Specialist",
-        hospital: "CMI Hospital",
-    },
+    
 ]
 
 export default function HeaderCarousel() {
