@@ -1,12 +1,17 @@
-
-
 import Head from "next/head"
 import { Title, createStyles, rem } from "@mantine/core"
-import HeaderCarousel from "@/components/header-carousel"
 import Search from "@/components/search"
 import Services from "@/components/services"
-import Clinics from "@/components/clinics"
 import Articles from "@/components/articles"
+import dynamic from "next/dynamic"
+
+const HeaderCarousel = dynamic(() => import("../components/header-carousel"), {
+    ssr: false,
+})
+
+const Clinics = dynamic(() => import("../components/clinics"), {
+    ssr: false,
+})
 
 const useStyles = createStyles((theme) => ({
     Title: {
