@@ -61,7 +61,7 @@ export default function Search() {
 
                     <Switch label="Availability" size="md" />
 
-                    <a href="whodadoc/pages/cardiologist.tsx">
+                    <a href="/cardio">
 
                     <Button radius="lg" size="lg">
                         Search
